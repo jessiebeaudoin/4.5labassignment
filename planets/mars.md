@@ -2,5 +2,6 @@
 title: "Mars"
 class: "mars"
 au: "1.52"
-layout: "planetcard.liquid"
+layout: "base.liquid"
 ---
+{% include "planetcard.liquid" %}
