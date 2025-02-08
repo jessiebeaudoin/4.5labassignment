@@ -1,0 +1,60 @@
+:root {
+    --card-bg-color: #fff;
+    --card-border-color: #ccc;
+    --card-border-radius: 10px;
+    --card-padding: 20px;
+    --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --transition-duration: 0.3s;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .card {
+    background-color: var(--card-bg-color);
+    border: 1px solid var(--card-border-color);
+    border-radius: var(--card-border-radius);
+    padding: var(--card-padding);
+    box-shadow: var(--card-shadow);
+    text-align: center;
+    transition: transform var(--transition-duration), box-shadow var(--transition-duration);
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .planet-avatar, .sun-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+  }
+  
+  .planet-avatar {
+    background-color: var(--planet-color);
+    width: var(--planet-size);
+    height: var(--planet-size);
+  }
+  
+  .sun-avatar {
+    background: radial-gradient(circle, #ffcc00, #ff9900);
+  }
+  
