@@ -1,8 +1,14 @@
 {
-  "devDependencies": {
-    "@11ty/eleventy": "^3.0.0"
+  "name": "planetary-cards",
+  "version": "1.0.0",
+  "description": "Planetary Playing Cards with 11ty",
+  "main": ".eleventy.js",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
   },
   "dependencies": {
-    "@11ty/eleventy-upgrade-help": "^3.0.1"
+    "@11ty/eleventy": "^2.0.0",
+    "scrollreveal": "^4.0.9"
   }
 }
