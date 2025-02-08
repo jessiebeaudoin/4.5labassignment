@@ -6,7 +6,7 @@ title: "Planetary Playing Cards"
 <h1>Planetary Playing Cards</h1>
 <div class="planet-grid">
     {% for planet in collections.planets %}
-        {% include "planet-card.njk" with {
+        {% include "planetcard.liquid" with {
             name: planet.data.title,
             class: planet.data.class,
             au: planet.data.au
