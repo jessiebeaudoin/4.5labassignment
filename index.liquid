@@ -1,11 +1,14 @@
 ---
 layout: base.liquid
-title: "Planetary Playing Cards"
+title: Planetary Playing Cards
 ---
 
-<h1>Planetary Playing Cards</h1>
-<div class="planet-grid">
+<main class="container">
+  <h1>Planetary Playing Cards</h1>
+  <div class="grid">
+    {% include 'sun.liquid' %}
     {% for planet in collections.planets %}
-        {% include "planetcard.liquid" with planet.data %}
+      {% include 'planet.liquid', planet: planet %}
     {% endfor %}
-</div>
+  </div>
+</main>
