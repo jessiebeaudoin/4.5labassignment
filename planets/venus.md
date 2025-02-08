@@ -2,6 +2,6 @@
 title: "Venus"
 class: "venus"
 au: "0.72"
-layout: "base.liquid"
+layout: "layout.liquid"
 ---
 {% include "planetcard.liquid" %}

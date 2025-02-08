@@ -2,6 +2,6 @@
 title: "Sun"
 class: "sun"
 au: "Type G2V"
-layout: "base.liquid"
+layout: "layout.liquid"
 ---
 {% include "planetcard.liquid" %}
