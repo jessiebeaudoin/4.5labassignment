@@ -1,5 +1,5 @@
-<div class="planet-card {{ class }}">
-    <div class="planet-circle"></div>
-    <h2>{{ title }}</h2>
-    <p>{{ au }} AU</p>
+<div class="card">
+  <div class="planet-avatar" style="--planet-color: {{ planet.data.color }}; --planet-size: {{ planet.data.size }};"></div>
+  <h2>{{ planet.data.name }}</h2>
+  <p>AU: {{ planet.data.au }}</p>
 </div>
