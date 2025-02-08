@@ -1,15 +1,15 @@
 ---
-layout: base.njk
+layout: base.liquid
 title: "Planetary Playing Cards"
-pagination:
-    data: collections.planets
-    size: 1
-permalink: "/{{ pagination.items[0].title | slug }}/"
 ---
 
 <h1>Planetary Playing Cards</h1>
 <div class="planet-grid">
     {% for planet in collections.planets %}
-        {% include "planet-card.njk" with { name: planet.data.title, class: planet.data.class, au: planet.data.au } %}
+        {% include "planet-card.njk" with {
+            name: planet.data.title,
+            class: planet.data.class,
+            au: planet.data.au
+        } %}
     {% endfor %}
 </div>
