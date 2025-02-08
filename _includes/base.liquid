@@ -3,13 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Planetary Playing Cards</title>
+    <title>{{ title }}</title>
     <link rel="stylesheet" href="/css/styles.css">
-    <script defer src="/js/scrollreveal.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
-    <main>
-        {{ content }}
-    </main>
+    {{ content | safe }}
+    <script>
+        ScrollReveal().reveal('.planet-card', {
+            interval: 200,
+            origin: 'bottom',
+            distance: '50px'
+        });
+    </script>
 </body>
 </html>
