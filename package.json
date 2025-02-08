@@ -1,7 +1,7 @@
 {
-  "name": "planetary-cards",
+  "name": "planetary-playing-cards",
   "version": "1.0.0",
-  "description": "Planetary Playing Cards with 11ty",
+  "description": "A single-page website showcasing a collection of planetary playing cards using 11ty.",
   "main": ".eleventy.js",
   "scripts": {
     "start": "eleventy --serve",
@@ -10,5 +10,16 @@
   "dependencies": {
     "@11ty/eleventy": "^2.0.0",
     "scrollreveal": "^4.0.9"
-  }
+  },
+  "devDependencies": {},
+  "keywords": [
+    "11ty",
+    "eleventy",
+    "planetary",
+    "playing cards",
+    "css grid",
+    "scrollreveal"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
 }
