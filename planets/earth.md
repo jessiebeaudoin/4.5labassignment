@@ -2,6 +2,6 @@
 title: "Earth"
 class: "earth"
 au: "1.00"
-layout: "base.liquid"
+layout: "layout.liquid"
 ---
 {% include "planetcard.liquid" %}

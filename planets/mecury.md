@@ -2,6 +2,6 @@
 title: "Mercury"
 class: "mercury"
 au: "0.39"
-layout: "base.liquid"
+layout: "layout.liquid"
 ---
 {% include "planetcard.liquid" %}

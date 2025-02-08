@@ -2,6 +2,6 @@
 title: "Uranus"
 class: "uranus"
 au: "19.18"
-layout: "base.liquid"
+layout: "layout.liquid"
 ---
 {% include "planetcard.liquid" %}
