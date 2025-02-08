@@ -1,5 +1,4 @@
 module.exports = function(eleventyConfig) {
-  // Pass through static assets to the output folder
   eleventyConfig.addPassthroughCopy("css");
   eleventyConfig.addPassthroughCopy("js");
 
@@ -8,10 +7,15 @@ module.exports = function(eleventyConfig) {
       return collectionApi.getFilteredByGlob("planets/*.md");
   });
 
+  // Set default template engine to Nunjucks
   return {
       dir: {
           input: ".",
+          includes: "_includes",
+          layouts: "_layouts",
           output: "_site"
-      }
+      },
+      markdownTemplateEngine: "njk",
+      htmlTemplateEngine: "njk"
   };
 };
