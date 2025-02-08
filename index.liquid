@@ -1,15 +1,11 @@
 ---
-layout: base.liquid
+layout: base.njk
 title: "Planetary Playing Cards"
 ---
 
 <h1>Planetary Playing Cards</h1>
 <div class="planet-grid">
     {% for planet in collections.planets %}
-        {% include "planetcard.liquid" with {
-            name: planet.data.title,
-            class: planet.data.class,
-            au: planet.data.au
-        } %}
+        {% include "planet-card.njk" with planet.data %}
     {% endfor %}
 </div>
