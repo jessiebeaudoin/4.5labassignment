@@ -1,17 +1,15 @@
 ---
-layout: base.liquid
+layout: base.njk
 title: "Planetary Playing Cards"
+pagination:
+    data: collections.planets
+    size: 1
+permalink: "/{{ pagination.items[0].title | slug }}/"
 ---
 
 <h1>Planetary Playing Cards</h1>
 <div class="planet-grid">
-    {% include "planet-card.njk" with { name: "Sun", color: "#FFD700", distance: "Type G2V" } %}
-    {% include "planet-card.njk" with { name: "Mercury", color: "#9E9E9E", distance: "0.39" } %}
-    {% include "planet-card.njk" with { name: "Venus", color: "#D4AF37", distance: "0.72" } %}
-    {% include "planet-card.njk" with { name: "Earth", color: "#4CAF50", distance: "1.00" } %}
-    {% include "planet-card.njk" with { name: "Mars", color: "#E57373", distance: "1.52" } %}
-    {% include "planet-card.njk" with { name: "Jupiter", color: "#FF9800", distance: "5.20" } %}
-    {% include "planet-card.njk" with { name: "Saturn", color: "#FFC107", distance: "9.58" } %}
-    {% include "planet-card.njk" with { name: "Uranus", color: "#64B5F6", distance: "19.22" } %}
-    {% include "planet-card.njk" with { name: "Neptune", color: "#3F51B5", distance: "30.05" } %}
+    {% for planet in collections.planets %}
+        {% include "planet-card.njk" with { name: planet.data.title, class: planet.data.class, au: planet.data.au } %}
+    {% endfor %}
 </div>
